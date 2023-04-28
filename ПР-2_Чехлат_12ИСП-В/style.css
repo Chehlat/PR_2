@@ -1,0 +1,135 @@
+html{
+    background-color: #ffffff;
+    font-size: 24px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 650;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.user{
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    width: 30%;
+    background-color: #2c3145;
+    margin: 250px auto;
+    animation-name: chengeColor_text;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.about{
+    font-size: 22px;
+}
+
+.post{
+    color: #868a8e;
+    font-size: 20px;
+}
+.descriprion{
+    color: #868a8e;
+    font-size: 18px;
+}
+
+.user-avatar{
+    background-image: url(src/replace.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 7px solid #ffff;
+    border-radius: 50%;
+    overflow: hidden;
+    animation-name: chengeColor_border;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.button{
+    width: 200px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: #0bed26;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 29px;
+}
+.content{
+    padding: 30px;
+    margin: 30px;
+}
+
+.content__circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:relative;
+    animation-name: chenge__circle;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+@keyframes chenge__circle {
+    0% {
+       left: 0px;
+       background-color: rgb(250, 17, 0);
+    }
+    25%{
+        
+        border-radius: 0%;
+        background: rgba(255, 247, 0);
+    }
+    50%{
+        border-radius: 100%;
+        left: 250px;
+        background-color: rgba(0, 255, 0, 0.979);
+    }
+    75% {
+    
+        border-radius: 0%;
+        background: rgba(255, 247, 0);
+    }
+    100% {
+        left: 0px;
+        background-color: rgb(250, 17, 0);
+    }
+}
+
+@keyframes chengeColor_border {
+    0% {
+        border-color: #c300ff;
+    }
+    50% {
+        border-color: rgb(0, 132, 255);
+    }
+    100% {
+        border-color: #c300ff;
+    }
+}
+
+@keyframes chengeColor_text{
+    0% {
+        color: rgb(255, 255, 2);
+    }
+    25%{
+        color: rgb(9, 254, 5);
+    }
+    75% {
+        color: rgb(0, 204, 255);
+    }
+    100% {
+        color: rgb(255, 255, 2);
+    }
+}
